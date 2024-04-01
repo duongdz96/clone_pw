@@ -1,42 +1,36 @@
 <ul>
 	<li>
-		<a href="../manufacturers">
-			Quản lý nhà sản xuất
+		<a href="../students">
+			Quản lí học sinh
 		</a>
 	</li>
 </ul>
 
 <ul>
 	<li>
-		<a href="../products">
-			Quản lý sản phẩm
-		</a>
-	</li>
-</ul>
-<ul>
-	<li>
-		<a href="../orders">
-			Quản lý đơn hàng
+		<a href="../exams">
+			Quản lý bài thi
 		</a>
 	</li>
 </ul>
 
-<?php 
-	if(isset($_GET['error'])) {
-?>
 
-<span style="color: red;">
-	<?php echo $_GET['error']; ?>
-</span>
+<?php
+if (isset($_GET['error'])) {
+	?>
+
+	<span style="color: red;">
+		<?php echo $_GET['error']; ?>
+	</span>
 
 <?php } ?>
 
-<?php 
-	if(isset($_GET['sucess'])) {
-?>
+<?php
+if (isset($_GET['sucess'])) {
+	?>
 
-<span style="color: green;">
-	<?php echo $_GET['sucess']; ?>
-</span>
+	<span style="color: green;">
+		<?php echo $_GET['sucess']; ?>
+	</span>
 
 <?php } ?>
