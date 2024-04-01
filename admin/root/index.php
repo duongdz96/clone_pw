@@ -6,7 +6,7 @@
 	<title></title>
 </head>
 <body>
-Đây là giao diện admin
+Đây là giao diện admin123
 <?php 
 include '../menu.php';
  ?>
