@@ -30,7 +30,7 @@ mysqli_close($connect);
 				<p><?php echo $each['description'] ?></p>
 				<?php if(!empty($_SESSION['id'])) { ?>
 					<br>
-					<a href="quiz.php">Vào thi</a>
+					<a href="quiz.php?id=<?php echo $each['id']?>">Vào thi</a>
 				<?php } ?>
 			</div>
 		<?php } ?>
