@@ -14,8 +14,8 @@
 </ul>
 <ul>
     <li>
-        <a href="../student">
-            Chỉnh sửa thông tin
+        <a href="./view_result.php">
+            Xem kết quả
         </a>
     </li>
 </ul>

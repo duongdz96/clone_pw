@@ -49,7 +49,10 @@ if (mysqli_num_rows($result) > 0) {
     }
 
     $score = round(($correct_count / $total_questions) * 10, 2);
-
+    $sql = "update user_respond
+    set result = '$score'
+    where user_id = '$user_id'
+    and exam_id = '$exam_id'";
     echo "<p>Tổng số câu đúng: $correct_count / $total_questions</p>";
     echo "<p>Điểm số: $score</p>";
 } else {
