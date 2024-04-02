@@ -1,4 +1,4 @@
-<?php include '../check_super_admin_login.php'; ?>
+<?php include '../check_admin_login.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,6 +52,7 @@ Xem chi tiết câu hỏi
 	</tr>
 	<?php } ?>
 </table>
+<br><br><br>
 <?php
     $sql1 = "select question.id as ma_ch1,
     question.content as nd_ch1

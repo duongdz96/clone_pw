@@ -23,12 +23,6 @@
 	Mật khẩu
 	<input type="password" name="password">
 	<br>
-	Số điện thoại
-	<input type="text" name="phone_number">
-	<br>
-	Địa chỉ
-	<input type="text" name="address">
-	<br>
 	<button>Đăng ký</button>
 </form>
 </body>

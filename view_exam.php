@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,30 +9,30 @@
 		#tong {
 			width: 100%;
 			height: 700px;
-			background: black;
+/*			background: black;*/
 		}
 		#tren {
 			width: 100%;
 			height: 20%;
-			background: pink;
+/*			background: pink;*/
 		}
 		#giua {
 			width: 100%;
-			height: 70%;
-			background: red;
+			height: 73%;
+/*			background: red;*/
 		}
 		#duoi {
 			width: 100%;
-			height: 10%;
-			background: purple;
+			height: 7%;
+/*			background: purple;*/
 		}
 	</style>
 </head>
 <body>
 <div id="tong">
-	<?php include 'menu.php'?>
-	<?php include 'id.php'?>
-	<?php include 'footer.php'?>
+	<?php include 'menu.php' ?>
+	<?php include 'exam.php' ?>
+	<?php include 'footer.php' ?>
 </div>
 </body>
 </html>

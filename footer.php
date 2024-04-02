@@ -1,1 +1,1 @@
-<div id="duoi">Đây là foooter</div>
+<div id="duoi">Đây là bài làm của nhóm 3</div>

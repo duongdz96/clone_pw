@@ -12,7 +12,7 @@ else {
 
 require 'admin/connect.php';
 
-$sql = "select * from customers
+$sql = "select * from user
 where email = '$email' and password = '$password'";
 $result = mysqli_query($connect, $sql);
 $number_rows = mysqli_num_rows($result);
@@ -31,7 +31,7 @@ if($number_rows == 1) {
 		mysqli_query($connect, $sql);
 		setcookie('remember', $token, time() + (60 * 60 * 24 *30));
 	}
-	header('location:user.php');
+	header('location:index.php');
 	exit;
 }
 	// else {
@@ -39,4 +39,4 @@ if($number_rows == 1) {
 // }
 session_start();
 $_SESSION['error'] = "Sai email hoặc mật khẩu";
-header('location:signin.php');
+header('location:index.php');
