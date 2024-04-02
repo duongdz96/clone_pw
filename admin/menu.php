@@ -1,26 +1,17 @@
 <ul>
 	<li>
-		<a href="../manufacturers">
-			Quản lý nhà sản xuất
-		</a>
-	</li>
-</ul>
-
-<ul>
-	<li>
-		<a href="../products">
-			Quản lý sản phẩm
+		<a href="../test">
+			Quản lý kỳ thi
 		</a>
 	</li>
 </ul>
 <ul>
 	<li>
-		<a href="../orders">
-			Quản lý đơn hàng
+		<a href="../exam">
+			Quản lý bài thi
 		</a>
 	</li>
 </ul>
-
 <?php 
 	if(isset($_GET['error'])) {
 ?>

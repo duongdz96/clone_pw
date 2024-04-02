@@ -10,18 +10,15 @@
 	<?php 
 		include '../menu.php'
 	?>
-<form method="post" action="process_insert.php">
+<form method="post" action="process_insert.php" enctype="multipart/form-data">
 	Tên
 	<input type="text" name="name">
 	<br>
-	Địa chỉ
-	<textarea name="address"></textarea>
-	<br>
-	Số điện thoại
-	<input type="text" name="phone">
+	Mô tả
+	<textarea name="description"></textarea>
 	<br>
 	Ảnh
-	<input type="text" name="photo">
+	<input type="file" name="photo">
 	<br>
 	<button>Thêm</button>
 </form>

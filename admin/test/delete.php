@@ -8,7 +8,7 @@ $id = $_GET['id'];
 
 include '../connect.php';
 
-$sql = "delete from manufacturers
+$sql = "delete from test
 where id = '$id'";
 
 mysqli_query($connect, $sql);

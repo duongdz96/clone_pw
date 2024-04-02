@@ -7,22 +7,21 @@
 	<title></title>
 </head>
 <body>
-Đây là giao diện nhà sản xuất
+Đây là giao diện quản lý bài thi
 <a href="form_insert.php">Thêm</a>
 <?php 
 	include '../menu.php';
 ?>
 <?php 
 	require '../connect.php';
-	$sql = "select * from manufacturers";
+	$sql = "select * from test";
 	$result = mysqli_query($connect, $sql);
 ?>
 <table width="100%" border="1">
 	<tr>
 		<th>Mã</th>
 		<th>Tên</th>
-		<th>Địa chỉ</th>
-		<th>Điện thoại</th>
+		<th>Mô tả</th>
 		<th>Ảnh</th>
 		<th>Sửa</th>
 		<th>Xóa</th>
@@ -36,14 +35,11 @@
 			<?php echo $each['name'] ?>
 		</td>	
 		<td>
-			<?php echo $each['address'] ?>
+			<?php echo $each['description'] ?>
 		</td>	
 		<td>
-			<?php echo $each['phone'] ?>
-		</td>	
-		<td>
-			<img src="<?php echo $each['photo'] ?>" height = '100'>
-		</td>	
+			<img src="photos/<?php echo $each['photo'] ?>" height = "100">
+		</td>
 		<td>
 			<a href="form_update.php?id=<?php echo $each['id'] ?>">
 				Sửa
