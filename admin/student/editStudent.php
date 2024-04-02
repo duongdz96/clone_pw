@@ -27,7 +27,7 @@ where id = '$id'";
         <input type="text" name="email" value="<?php echo $each['email'] ?>">
         <br>
         Password
-        <input type="text" name="password" value="<?php echo $each['password'] ?>">
+        <input type="password" name="password" value="<?php echo $each['password'] ?>">
         <br>
         <button>Sửa</button>
     </form>

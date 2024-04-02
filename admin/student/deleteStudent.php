@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    Đây là giao diện quản lý kỳ thi
-    <a href="form_insert.php">Thêm</a>
+    Đây là giao diện quản lý học sinh
+    <!-- <a href="form_insert.php">Thêm</a> -->
     <?php
     include '../menu.php';
     ?>
@@ -39,7 +39,7 @@
                     <?php echo $each['email'] ?>
                 </td>
                 <td>
-                    <?php echo $each['password'] ?>
+                    <?php echo '********' ?>
                 </td>
                 <td>
                     <a href="editStudent.php?id=<?php echo $each['id'] ?>">
