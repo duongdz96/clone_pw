@@ -40,9 +40,9 @@
 	Mật khẩu
 	<input type="password" name="password">
 	<br>
-	Ghi nhớ đăng nhập
+	<!-- Ghi nhớ đăng nhập
 	<input type="checkbox" name="remember">
-	<br>
+	<br> -->
 	<button>Đăng nhập</button>
 </form>
 </body>

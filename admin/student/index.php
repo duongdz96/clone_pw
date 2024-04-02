@@ -8,7 +8,7 @@
 <ul>
     <li>
         <a href="./deleteStudent.php">
-            Xóa học sinh
+            Chỉnh sửa học sinh
         </a>
     </li>
 </ul>

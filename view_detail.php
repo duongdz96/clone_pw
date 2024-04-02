@@ -53,6 +53,7 @@ if (mysqli_num_rows($result) > 0) {
     set result = '$score'
     where user_id = '$user_id'
     and exam_id = '$exam_id'";
+    mysqli_query($connect, $sql);
     echo "<p>Tổng số câu đúng: $correct_count / $total_questions</p>";
     echo "<p>Điểm số: $score</p>";
 } else {

@@ -30,10 +30,10 @@
 </form>
 <table width="100%" border="1">
 	<tr>
-		<th>Mã</th>
-		<th>Tên</th>
-		<th>Bài kiểm tra</th>
-		<th>Điểm</th>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Exam ID</th>
+		<th>Score</th>
 	</tr>
 	<?php foreach ($result as $each) { ?>
 	<tr>
