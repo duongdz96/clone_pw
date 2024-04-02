@@ -20,4 +20,4 @@ values('$name', '$description', '$file_name')";
 mysqli_query($connect, $sql);
 
 mysqli_close($connect);
-header('location:index.php');
+header('location:index.php?success=Thêm thành công');

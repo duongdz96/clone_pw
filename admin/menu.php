@@ -23,11 +23,11 @@
 <?php } ?>
 
 <?php 
-	if(isset($_GET['sucess'])) {
+	if(isset($_GET['success'])) {
 ?>
 
 <span style="color: green;">
-	<?php echo $_GET['sucess']; ?>
+	<?php echo $_GET['success']; ?>
 </span>
 
 <?php } ?>
