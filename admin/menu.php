@@ -12,6 +12,13 @@
 		</a>
 	</li>
 </ul>
+<ul>
+	<li>
+		<a href="../question">
+			Quản lý câu hỏi
+		</a>
+	</li>
+</ul>
 <?php 
 	if(isset($_GET['error'])) {
 ?>

@@ -21,6 +21,7 @@ $result = mysqli_query($connect, $sql);
 	<br>
     Mô tả
     <textarea name="description"></textarea>
+	<br>
 	Ảnh
 	<input type="file" name="photo">
 	<br>

@@ -31,6 +31,7 @@
 		<th>Tên kỳ thi</th>
 		<th>Sửa</th>
 		<th>Xóa</th>
+		<th>Xem chi tiết</th>
 	</tr>
 <?php foreach ($result as $each) {?>
 	<tr>
@@ -46,6 +47,9 @@
 		</td>
 		<td>
 			<a href="delete.php?id=<?php echo $each['id'] ?>">Xóa</a>
+		</td>
+		<td>
+			<a href="view_detail.php?id=<?php echo $each['id'] ?>">Xem chi tiết</a>
 		</td>
 	</tr>
 <?php } ?>

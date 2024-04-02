@@ -7,7 +7,7 @@
 	<title></title>
 </head>
 <body>
-Đây là giao diện quản lý bài thi
+Đây là giao diện quản lý kỳ thi
 <a href="form_insert.php">Thêm</a>
 <?php 
 	include '../menu.php';
