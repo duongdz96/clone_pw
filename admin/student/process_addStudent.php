@@ -13,8 +13,8 @@ $number_rows = mysqli_fetch_array($result)['count(*)'];
 
 if ($number_rows == 1) {
     session_start();
-    $_SESSION['error'] = "Email đã tồn tại";
-    header('location: addStudent.php');
+    http_response_code(400);
+    echo ('hoc sinh da duoc them');
     exit;
 }
 
@@ -32,4 +32,6 @@ $_SESSION['id'] = $id;
 $_SESSION['name'] = $name;
 
 mysqli_close($connect);
-header('location: ../root/index.php');
+echo 'them hoc sinh ';
+echo $_SESSION['name'];
+echo ' thanh cong';

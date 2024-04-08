@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -11,10 +11,10 @@ where email = '$email'";
 $result = mysqli_query($connect, $sql);
 $number_rows = mysqli_fetch_array($result)['count(*)'];
 
-if($number_rows == 1){
+if ($number_rows == 1) {
 	session_start();
-	$_SESSION['error'] = "Trùng email rồi";
-	header('location:signup.php');
+	http_response_code(400);
+	echo json_encode(["Trung email hoac chua dien ten"]);
 	exit;
 }
 
@@ -32,4 +32,5 @@ $_SESSION['id'] = $id;
 $_SESSION['name'] = $name;
 
 mysqli_close($connect);
-header('location:index.php');
+echo $_SESSION['name'];
+echo " dang ky thanh cong";

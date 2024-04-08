@@ -17,13 +17,13 @@
     <h1>Thêm học sinh</h1>
     <form method="post" action="process_addStudent.php">
         Tên
-        <input type="text" name="name">
+        <input type="text" name="name" required>
         <br>
         Email
-        <input type="email" name="email">
+        <input type="email" name="email" required>
         <br>
         Mật khẩu
-        <input type="password" name="password">
+        <input type="password" name="password" required>
         <br>
         <button>Thêm học sinh</button>
     </form>
