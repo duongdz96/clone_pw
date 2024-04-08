@@ -17,4 +17,4 @@ id = '$id'";
 mysqli_query($connect, $sql);
 mysqli_close($connect);
 
-header('location: deleteStudent.php');
+echo "Cap nhat hoc sinh thanh cong";

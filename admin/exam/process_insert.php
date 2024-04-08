@@ -1,5 +1,5 @@
-<?php 
-include '../check_admin_login.php';
+<?php
+// include '../check_admin_login.php';
 
 $name = $_POST['name'];
 $photo = $_FILES['photo'];
@@ -8,8 +8,8 @@ $test_id = $_POST['test_id'];
 
 $folder = "photos/";
 $file_extension = explode('.', $photo['name'])[1];
-$file_name = time().'.'.$file_extension;
-$path_file = $folder.$file_name;
+$file_name = time() . '.' . $file_extension;
+$path_file = $folder . $file_name;
 move_uploaded_file($photo["tmp_name"], $path_file);
 
 
@@ -22,4 +22,4 @@ mysqli_query($connect, $sql);
 
 mysqli_close($connect);
 
-header('location:index.php?success=Thêm thành công');
+echo "Them bai thi thanh cong";

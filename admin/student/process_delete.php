@@ -1,6 +1,6 @@
 <?php
 if (empty($_GET['id'])) {
-    header('location: index.php?error=Phải truyền mã vào');
+    echo "Phai truyen id";
 }
 
 $id = $_GET['id'];
@@ -14,4 +14,4 @@ mysqli_query($connect, $sql);
 
 mysqli_close($connect);
 
-header('location: deleteStudent.php');
+echo "Xoa hoc sinh thanh cong";
