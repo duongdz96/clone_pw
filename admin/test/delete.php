@@ -13,6 +13,12 @@ where id = '$id'";
 
 mysqli_query($connect, $sql);
 
-mysqli_close($connect);
-
 echo "Xoa ki thi thanh cong";
+
+$result = mysqli_query($connect, "SELECT id, name, description FROM test");
+$data = array();
+while ($row = mysqli_fetch_assoc($result)) {
+	$data[] = $row;
+}
+mysqli_close($connect);
+echo json_encode($data);

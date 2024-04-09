@@ -12,6 +12,11 @@ where id = '$id'";
 
 mysqli_query($connect, $sql);
 
-mysqli_close($connect);
-
 echo "Xoa hoc sinh thanh cong";
+$result = mysqli_query($connect, "SELECT * FROM user");
+$data = array();
+while ($row = mysqli_fetch_assoc($result)) {
+    $data[] = $row;
+}
+mysqli_close($connect);
+echo json_encode($data);

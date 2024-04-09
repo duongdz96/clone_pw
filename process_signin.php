@@ -16,8 +16,8 @@ if ($number_rows == 1) {
 	$id = $each['id'];
 	$_SESSION['id'] = $id;
 	$_SESSION['name'] = $each['name'];
-	echo $_SESSION['name'];
-	echo " dang nhap thanh cong";
+	echo $_SESSION['name'] . "<br>";
+	echo $email;
 	exit;
 } else {
 	http_response_code(400);

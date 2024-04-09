@@ -31,7 +31,14 @@ session_start();
 $_SESSION['id'] = $id;
 $_SESSION['name'] = $name;
 
-mysqli_close($connect);
 echo 'them hoc sinh ';
 echo $_SESSION['name'];
 echo ' thanh cong';
+
+$result = mysqli_query($connect, "SELECT * FROM user WHERE id='$id'");
+$data = array();
+while ($row = mysqli_fetch_assoc($result)) {
+    $data[] = $row;
+}
+mysqli_close($connect);
+echo json_encode($data);
